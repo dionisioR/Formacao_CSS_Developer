@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .inline {
+        display: inline-block;
+      }
+      .exemplo {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      #elemento-1 {
+        background-color: orange;
+      }
+      #elemento-2 {
+        background-color: palevioletred;
+        position: absolute;
+        left: 20px;
+      }
+      #elemento-3 {
+        background-color: palegreen;
+      }
+      #elemento-4 {
+        background-color: rgb(224, 99, 141);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      #elemento-5 {
+        background-color: rgb(196, 82, 120);
+        position: relative;
+        bottom: 50px;
+        left: 50px;
+      }
+      #elemento-6 {
+        background-color: rgb(140, 55, 83);
+      }
+      #elemento-7 {
+        background-color: rgb(33, 31, 32);
+        color: aliceblue;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .elemento-pai {
+        position: relative;
+        height: 300px;
+        border: rgb(33, 31, 32) 1px solid;
+        background-color: rgb(187, 179, 183);
+      }
+      .elemento-pai-2 {
+        position: relative;
+        margin-top: 10px;
+        height: 300px;
+        border: rgb(33, 31, 32) 1px solid;
+        background-color: rgb(174, 134, 123);
+      }
+
+      #elemento-8 {
+        background-color: rgb(245, 6, 125);
+        color: aliceblue;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionamento de elementos em Tela</h1>
+    <p>
+      A propriedade position vai nos ajudar a manipular a loicalização / posição
+      de um elemento na sua página.
+    </p>
+    <ul>
+      <li><code>position: static;</code></li>
+      <li><code>position: relative;</code></li>
+      <li><code>position: absolute;</code></li>
+      <li><code>position: fixed;</code></li>
+      <li><code>position: sticky;</code></li>
+    </ul>
+
+    <h3>Exemplos:</h3>
+    <p>position: static; Já é o padrão.</p>
+    <p>
+      position: relative; Tempo como ponto de partida seua posição original.
+      [top, bottom, left, right]
+    </p>
+    <p>
+      position: absolute; tem como referência o elemento pai, o elemento pai
+      deve ter position relative, como se não estivisse oculpando espaço, como
+      se estivesse flultuando [top, bottom, left, right]
+    </p>
+    <p>
+      position: fixed o elemento fica fixo na tela[top, bottom, left, right]
+    </p>
+
+    <div id="elemento-1" class="exemplo inline">Elemento 01</div>
+    <div id="elemento-2" class="exemplo inline">Elemento 02</div>
+    <div id="elemento-3" class="exemplo inline">Elemento 03</div>
+
+    <hr />
+
+    <div id="elemento-4" class="exemplo">Elemento 04</div>
+    <div id="elemento-5" class="exemplo">Elemento 05</div>
+    <div id="elemento-6" class="exemplo">Elemento 06</div>
+
+    <hr />
+
+    <div class="elemento-pai">
+      <div id="elemento-7" class="exemplo">Elemento 07</div>
+    </div>
+    <div class="elemento-pai-2">
+      <div id="elemento-8" class="exemplo">Elemento <br> 08 <br>fixed</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>
