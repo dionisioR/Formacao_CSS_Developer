@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+            /* align-items: stretch; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: center; */
+            align-items: baseline;
+            /* row-gap: 10px; espaço entre linhas */
+            /*column-gap: 20px;  espaço entre colunas */
+            /* gap: 20px 30px; espaço entre linhas e colunas */
+            /* gap: 2rem 3rem; espaço entre linhas e colunas */
+            /* gap: 5% 10%; espaço entre linhas e colunas */
+
+            ;
+        }
+
+        .item{
+            background: orange;
+            margin: 10px;
+        }
+
+        #container-01{
+            height: 100px;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+
+        }
+
+        #container-02{
+            height: 300px;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+        }
+
+        .container1{
+            background-color: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 200px;
+
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .item-1{
+            background-color: yellow;
+            flex-grow: 1;
+            
+        }
+        .item-2{
+            background-color: yellow;
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1" id="container-01">
+        <div class="item-1" >Item 01 abc def ghi</div>
+        <div class="item-2" >Item 02</div>
+        <div class="item-1" >Item 03</div>
+    </div>
+    <div class="container" id="container-01">
+        <div class="item" style="height: 30px;">Item 01</div>
+        <div class="item" style="height: 70px; order: -1">Item 02</div>
+        <div class="item" style="height: 50px; order: -2">Item 03</div>
+        <!-- <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div> -->
+    </div>
+    <div class="container" id="container-02">
+        <div class="item" style="width: 70px;">Item 01</div>
+        <div class="item" style="width: 120px;">Item 02</div>
+        <div class="item" style="width: 90px;">Item 03</div>
+        <!-- <div class="item">Item 04</div>
+        <div class="item">Item 05</div>
+        <div class="item">Item 06</div>
+        <div class="item">Item 07</div>
+        <div class="item">Item 08</div>
+        <div class="item">Item 09</div>
+        <div class="item">Item 10</div> -->
+    </div>
+</body>
+</html>
