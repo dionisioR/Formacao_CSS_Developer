@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid flex</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+
+      .container {
+        border: 2px solid;
+        padding: 10px;
+        height: 300px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .item {
+        text-align: center;
+        background: deepskyblue;
+      }
+
+      .selected {
+        background-image: url("https://picsum.photos/id/251/900/300");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* 
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; */
+        /* O grid-area é a forma resumida do grid-colum e grid-row */
+        /* grid-area: row-start / column-start / row-end / column-end; */
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item selected">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid flex</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+
+      .container {
+        background-color: yellow;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 500px;
+
+        display: grid;
+
+        /* grid-template-columns: min-content min-content; */
+        /* grid-template-columns: max-content max-content; */
+        grid-template-columns: auto auto auto;
+
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      .item {
+        border: 1px solid #000;
+      }
+
+      .item-01 {
+        background-color: palevioletred;
+      }
+      .item-02 {
+        background-color: cornflowerblue;
+      }
+      .item-03 {
+        background-color: palegreen;
+      }
+      .item-04 {
+        background-color: orange;
+      }
+      .item-05 {
+        background-color: greenyellow;
+      }
+      .item-06 {
+        background-color: lightblue;
+      }
+      .item-07 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item-01">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Officia debitis necessitatibus itaque ratione soluta in alias eveniet porro atque! Mollitia, rerum dolore?</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+      <div class="item item-04">Item 04</div>
+      <div class="item item-05">Item 05</div>
+      <div class="item item-06">Item 06</div>
+      <div class="item item-07">Item 07</div>
+    </div>
+  </body>
+</html>

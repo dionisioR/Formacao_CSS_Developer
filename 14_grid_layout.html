@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid flex</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+
+      .container{
+        border: 2px solid;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+        grid-template-rows: 50px 100px 200px;
+        gap: 10px;
+      }
+
+      .item{
+        text-align: center;
+        background-image: url("https://picsum.photos/id/251/900/300");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+
+        /* grid-column-start: 1; */
+        /* grid-column-end: 4; */
+        /* grid-column-end: span 3; */ /* span comrresponde a 3 colunas e não linhas */
+
+        /* forma reduzida */
+        /* grid-column: 1 / 4; */ /* (grid-column-start: 1; grid-column-end: 4;)*/
+        grid-column: 1 / span 3; /* (grid-column-start: 1; grid-column-end: 4;)*/
+
+        /* grid-row-start: 2; */
+        /* grid-row-end: 4; */
+
+        /* forma reduzida */
+        /* grid-row: 2 / 4; */ /* (grid-row-start: 2; grid-row-end: 4;) */
+        grid-row: 2 / span 2; /* (grid-row-start: 2; grid-row-end: 4;) */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        .item-a
+      </div>
+    </div>
+  </body>
+</html>

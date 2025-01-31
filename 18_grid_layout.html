@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid flex</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr 1fr;
+        grid-template-rows: repeat(3);
+
+        grid-template-areas:
+          "header header header header"
+          "main . . sidebar"
+          "footer footer footer footer";
+      }
+
+     
+      header{
+        background-color: orange;
+        grid-area: header;
+        height: 6vh;
+      }
+      main{
+        background-color: deepskyblue;
+        grid-area: main;
+        height: 79vh;
+      }
+      aside{
+        background-color: lightgreen;
+        grid-area: sidebar;
+      }
+      footer{
+        background-color: lightcoral;
+        grid-area: footer;
+        height: 15vh;
+      }
+
+   
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+  </body>
+</html>
