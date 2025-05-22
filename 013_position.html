@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        font-family: sans-serif;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+        grid-template-rows: 1fr 2fr 0.5fr;
+        gap: 10px;
+        /* -------------------------------------- */
+        /* grid-template-areas: */
+        grid-template-areas: 
+          "header header header header"
+          "main empty empty sidebar"
+          "footer footer footer footer";
+      }
+      header {
+        background-color: lightblue;
+        grid-area: header;
+      }
+      main {
+        background-color: lightgreen;
+        grid-area: main;
+      }
+      .empty {
+        background-color: lightgray;
+        grid-area: empty;
+      }
+      .sidebar {
+        background-color: lightcoral;
+        grid-area: sidebar;
+      }
+      .footer {
+        background-color: lightgoldenrodyellow;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <h1>Main</h1>
+      <p>Some content</p>
+    </main>
+    <div class="empty">
+      <h2>Empty</h2>
+    </div>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Some content</p>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
+      <p>Some content</p>
+    </div>
+  </body>
+</html>

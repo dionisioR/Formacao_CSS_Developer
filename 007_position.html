@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid black;
+
+        /* criando as grids no elemento pai */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+        grid-template-rows: 50px 100px 200px;
+      }
+      .item {
+        text-align: center;
+        background-color: orange;
+
+        /* definindo a posição do elemento filho em relação ao elemento pai*/
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item-a</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid black;
+
+        /* criando as grids no elemento pai */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
+      }
+      .item {
+        background-color: lightgray;
+      }
+      .selected {
+        text-align: center;
+        background-color: lightblue;
+        border: 2px solid darkblue;
+
+        /* GRID-AREA */
+        /* é a forma resumida de definir o grid */
+        grid-area: 2 / 3 / 3 / 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item selected">01</div>
+      <div class="item">02</div>
+      <div class="item">03</div>
+      <div class="item">04</div>
+      <div class="item">05</div>
+      <div class="item">06</div>
+    </div>
+  </body>
+</html>

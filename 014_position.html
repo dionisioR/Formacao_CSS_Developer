@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        font-family: sans-serif;
+        /* height: 100vh; */
+        display: grid;
+        /*------------------------*/
+        /* shorthand grid properties */
+        grid-template: repeat(3, 1fr) / 1fr 2fr 2fr 1fr ;
+       
+      }
+      header {
+        background-color: lightblue;
+      }
+      main {
+        background-color: lightgreen;
+      }
+      .empty {
+        background-color: lightgray;
+      }
+      .sidebar {
+        background-color: lightcoral;
+      }
+      .footer {
+        background-color: lightgoldenrodyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <h1>Main</h1>
+      <p>Some content</p>
+    </main>
+    <div class="empty">
+      <h2>Empty</h2>
+    </div>
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Some content</p>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
+      <p>Some content</p>
+    </div>
+  </body>
+</html>
